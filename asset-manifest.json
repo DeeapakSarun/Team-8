@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Team-8/static/css/main.fe3dc31c.css",
-    "main.js": "/Team-8/static/js/main.facf4968.js",
-    "static/js/453.4538db9e.chunk.js": "/Team-8/static/js/453.4538db9e.chunk.js",
-    "static/media/Team8.svg": "/Team-8/static/media/Team8.c5fa7374266131c0fcb2ca1a891375eb.svg",
-    "index.html": "/Team-8/index.html",
-    "main.fe3dc31c.css.map": "/Team-8/static/css/main.fe3dc31c.css.map",
-    "main.facf4968.js.map": "/Team-8/static/js/main.facf4968.js.map",
-    "453.4538db9e.chunk.js.map": "/Team-8/static/js/453.4538db9e.chunk.js.map"
+    "main.css": "/Team-8/team-8/static/css/main.fe3dc31c.css",
+    "main.js": "/Team-8/team-8/static/js/main.2d7311dc.js",
+    "static/js/453.4538db9e.chunk.js": "/Team-8/team-8/static/js/453.4538db9e.chunk.js",
+    "static/media/Team8.svg": "/Team-8/team-8/static/media/Team8.c5fa7374266131c0fcb2ca1a891375eb.svg",
+    "index.html": "/Team-8/team-8/index.html",
+    "main.fe3dc31c.css.map": "/Team-8/team-8/static/css/main.fe3dc31c.css.map",
+    "main.2d7311dc.js.map": "/Team-8/team-8/static/js/main.2d7311dc.js.map",
+    "453.4538db9e.chunk.js.map": "/Team-8/team-8/static/js/453.4538db9e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe3dc31c.css",
-    "static/js/main.facf4968.js"
+    "static/js/main.2d7311dc.js"
   ]
 }
