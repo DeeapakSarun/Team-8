@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './Team8.svg';
 import './App.css';
 
 function Header() {
