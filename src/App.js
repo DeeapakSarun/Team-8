@@ -1,15 +1,19 @@
-import logo from './Team8.svg';
+import React from 'react';
 import './App.css';
+import Header from './Header';
+import Main from './Main';
+import Footer from './Footer';
+import Sidebar from './Sidebar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Website Loading...
-        </p>
-      </header>
+      <Header />
+      <div className="App-body">
+        <Sidebar />
+        <Main />
+      </div>
+      <Footer />
     </div>
   );
 }

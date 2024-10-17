@@ -1,36 +1,61 @@
+/* src/App.css */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-header,
+.App-footer {
+  background-color: #282c34;
+  color: white;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
+.App-footer {
+  padding: 10px;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.App-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: max-content;
+  min-height: 40vh;
+  padding: 20px;
+}
 
-  to {
-    transform: rotate(360deg);
-  }
+.App-main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.App-sidebar {
+  width: 200px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.App-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.App-sidebar ul li {
+  margin: 10px 0;
+}
+
+.App-sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.App-sidebar ul li a:hover {
+  text-decoration: underline;
 }
