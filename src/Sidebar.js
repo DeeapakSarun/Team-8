@@ -8,6 +8,7 @@ import {
   CDBSidebarFooter,
 } from "cdbreact";
 import "./Sidebar.css";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -24,10 +25,10 @@ const Sidebar = () => {
             <CDBSidebarMenuItem icon="th-large">Home</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="sticky-note">Content</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="sitemap" iconType="solid">
-              <a href="taxonomy-sectio">Taxonomy</a>
+            <Link to="/Taxonomy">Taxonomy</Link>
             </CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="users" iconType="users">
-              Contributions
+            <Link to="/Team">Contributions</Link>
             </CDBSidebarMenuItem>
           </CDBSidebarMenu>
         </CDBSidebarContent>

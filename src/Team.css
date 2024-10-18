@@ -1,0 +1,88 @@
+/* Background for the entire team section */
+.App-team {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f3f4f7 25%, #f1f1f3 75%);
+}
+
+/* Grid layout for team members */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px; 
+  justify-items: center;
+  margin-top: 30px;
+}
+
+/* Team card styling */
+.team-card {
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff; 
+  overflow: hidden;
+  padding: 10px;
+  position: relative; 
+  cursor: pointer;
+}
+
+.team-card:hover {
+  transform: translateY(-15px); 
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); 
+  background: linear-gradient(135deg, #f8f7fa 25%, #f7f7f8 75%); 
+}
+
+.media-wrapper {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;  /* Ensure the image doesn't overflow out of the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensures the image fits within the circle */
+  border-radius: 50%; /* Circular image */
+  border: 3px solid #fff;  /* Adds a border around the image */
+}
+
+
+/* Card content styling */
+.team-card .MuiCardContent-root {
+  text-align: center;
+  padding: 16px;
+}
+
+.team-card h5 {
+  margin-top: 10px;
+  font-size: 1.35em;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.team-card p {
+  color: #555;
+  margin-top: 8px;
+  font-size: 0.9em;
+}
+
+/* Hover effect for text */
+.team-card:hover h5 {
+  color: #ffffff; 
+}
+
+.team-card:hover p {
+  color: #ffffff; 
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 600px) {
+  .team-members {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  }
+}
+ 
