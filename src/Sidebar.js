@@ -1,17 +1,48 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import {
+  CDBSidebar,
+  CDBSidebarContent,
+  CDBSidebarHeader,
+  CDBSidebarMenu,
+  CDBSidebarMenuItem,
+  CDBSidebarFooter,
+} from "cdbreact";
+import "./Sidebar.css";
 
-function Sidebar() {
-    return (
-        <aside className="App-sidebar">
-            <ul>
-                <li><a href="#section1">Section 1</a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <li><a href="#taxonomy-section">Section 3</a></li>
-                <li><a href="#section4">Section 4</a></li>
-            </ul>
-        </aside>
-    );
-}
+const Sidebar = () => {
+  return (
+    <div className="sidebar-main">
+      <CDBSidebar className="sidebar-color">
+        <CDBSidebarHeader
+          className="sidebar-color"
+          prefix={<i className="fa fa-bars" />}
+        >
+          Contents
+        </CDBSidebarHeader>
+        <CDBSidebarContent className="sidebar-color">
+          <CDBSidebarMenu>
+            <CDBSidebarMenuItem icon="th-large">Home</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="sticky-note">Content</CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="sitemap" iconType="solid">
+              Taxonomy
+            </CDBSidebarMenuItem>
+            <CDBSidebarMenuItem icon="users" iconType="users">
+              Contributions
+            </CDBSidebarMenuItem>
+          </CDBSidebarMenu>
+        </CDBSidebarContent>
+
+        <CDBSidebarFooter
+          className="sidebar-color"
+          style={{ textAlign: "center" }}
+        >
+          <div className="sidebar-btn-wrapper" style={{ padding: "20px 5px" }}>
+            Team 8
+          </div>
+        </CDBSidebarFooter>
+      </CDBSidebar>
+    </div>
+  );
+};
 
 export default Sidebar;
