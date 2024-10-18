@@ -9,15 +9,19 @@ import Taxonomy from './Taxonomy';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <div className="App-body">
+      <div className="whole-body">
         <Sidebar />
-        <div className="App-content">
+        <div className="right-body">
+          <Header />
+          <div className="App-body">
+            <div className="App-content">
           <Main />
-          <Taxonomy />  
+              <Taxonomy />  
         </div>
       </div>
-      <Footer />
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }
