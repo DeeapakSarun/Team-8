@@ -24,7 +24,7 @@ const Sidebar = () => {
             <CDBSidebarMenuItem icon="th-large">Home</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="sticky-note">Content</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="sitemap" iconType="solid">
-              Taxonomy
+              <a href="taxonomy-sectio">Taxonomy</a>
             </CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="users" iconType="users">
               Contributions
