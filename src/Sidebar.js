@@ -23,7 +23,7 @@ const Sidebar = () => {
           <CDBSidebarMenu>
             <CDBSidebarMenuItem icon="th-large">Home</CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="sticky-note">Content</CDBSidebarMenuItem>
-            <CDBSidebarMenuItem icon="credit-card" iconType="solid">
+            <CDBSidebarMenuItem icon="sitemap" iconType="solid">
               Taxonomy
             </CDBSidebarMenuItem>
             <CDBSidebarMenuItem icon="users" iconType="users">
