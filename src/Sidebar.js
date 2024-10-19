@@ -8,6 +8,7 @@ import {
   CDBSidebarFooter,
 } from "cdbreact";
 import "./Sidebar.css";
+
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
