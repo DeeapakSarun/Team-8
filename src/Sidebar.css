@@ -1,5 +1,6 @@
 .sidebar-main{
     height: max(100vh);
+    position: sticky;
 }
 
 .sidebar-color{
