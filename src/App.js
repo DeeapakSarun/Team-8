@@ -1,12 +1,15 @@
-import React from "react";
-import "./App.css";
-import Header from "./Header";
-import Main from "./Main";
-import Footer from "./Footer";
-import Sidebar from "./Sidebar";
-import Taxonomy from "./Taxonomy";
-import Team from "./Team";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import React from 'react';
+import './App.css';
+import Header from './Header';
+import Main from './Main';
+import Footer from './Footer';
+import Sidebar from './Sidebar';
+import Taxonomy from './Taxonomy';
+import Team from './Team';
+import Content from './Content';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
@@ -22,6 +25,7 @@ function App() {
                   <Route path="/" element={<Main />} />
                   <Route path="/Taxonomy" element={<Taxonomy />} />
                   <Route path="/team" element={<Team />} />
+                  <Route path="/Content" element={<Content />} />
                 </Routes>
               </div>
             </div>

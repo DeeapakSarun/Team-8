@@ -23,17 +23,24 @@ const Sidebar = () => {
         </CDBSidebarHeader>
         <CDBSidebarContent className="sidebar-color">
           <CDBSidebarMenu>
+
             {/* <CDBSidebarMenuItem icon="fas fa-home">Home</CDBSidebarMenuItem> */}
             <CDBSidebarMenuItem icon="fas fa-home">
               <Link to = "/">Home</Link>
             </CDBSidebarMenuItem>
-            <CDBSidebarMenuItem icon="sticky-note">Content</CDBSidebarMenuItem>
+      
+            <CDBSidebarMenuItem icon="sticky-note">
+              <Link to="/Content">Content</Link>
+            </CDBSidebarMenuItem>
+
             <CDBSidebarMenuItem icon="sitemap" iconType="solid">
               <Link to="/Taxonomy">Taxonomy</Link>
             </CDBSidebarMenuItem>
+
             <CDBSidebarMenuItem icon="users" iconType="users">
               <Link to="/Team">Contributions</Link>
             </CDBSidebarMenuItem>
+
           </CDBSidebarMenu>
         </CDBSidebarContent>
 

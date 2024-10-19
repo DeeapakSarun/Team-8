@@ -1,5 +1,15 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
 }
 
 .whole-body {
@@ -78,6 +88,17 @@
 .App-sidebar ul li a:hover {
   text-decoration: underline;
 }
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  width: 100%;
+  position: relative; /* Keep it at the bottom of the content */
+  bottom: 0;
+  left: 0;
+}
+
 
 .App-main {
   padding: 20px;
