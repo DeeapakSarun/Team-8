@@ -1,9 +1,4 @@
-import React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
+import React, { useState } from 'react';
 import './Team.css';
 
 const teamMembers = [
@@ -25,7 +20,7 @@ const teamMembers = [
   {
     name: "Vyshnavi Gavara",
     bio: "Bio for Vyshnavi...",
-    imgUrl: "public/images/Navreet.png",
+    imgUrl: "https://via.placeholder.com/150",
   },
   {
     name: "Mouli Naidu Lukalapu",
@@ -34,41 +29,44 @@ const teamMembers = [
   },
   {
     name: "Navreet Kaur",
-    bio: "Hi,My name is Navreet Kaur and I am a graduate student currently pursuing a Master's degree in Computer Science, following my Bachelor's in Computer Application from Punjab, India. Throughout my academic journey, I have worked on various projects that have enhanced my skills in Java and Python. As part of my software development principles coursework, I collaborated on a group project called GoFundEase, an innovative platform aimed at revolutionizing fundraising for personal causes, charitable events, and entrepreneurial ventures. My primary focus was on the backend development, where I designed and implemented a robust server-side architecture to handle API requests and manage database interactions. Outside of academics, I enjoy reading books,  Brian Weiss being one of my favorite authors, which allows me to maintain a balanced life while pursuing my studies.",
-    imgUrl: "public/images/Navreet.png",
+    bio: "Bio for Navreet...",
+    imgUrl: "/images/Navreet.png",
   },
 ];
 
 function Team() {
+  const [flipped, setFlipped] = useState(Array(teamMembers.length).fill(false));
+
+  const handleFlip = (index) => {
+    const newFlipped = [...flipped];
+    newFlipped[index] = !newFlipped[index];
+    setFlipped(newFlipped);
+  };
+
   return (
     <div className="App-team">
-      <Typography variant="h4" gutterBottom>
-        Meet the Team
-      </Typography>
-      <Grid container spacing={4}>
+      <h2>Meet the Team</h2>
+      <div className="team-members">
         {teamMembers.map((member, index) => (
-          <Grid item key={index} xs={12} sm={6} md={4}>
-            <Card className="team-card">
-              <div className="media-wrapper">
-                <CardMedia
-                  component="img"
-                  alt={member.name}
-                  image={member.imgUrl}
-                  className="team-image"
-                />
+          <div
+            key={index}
+            className={`flip-card ${flipped[index] ? 'flipped' : ''}`}
+            onClick={() => handleFlip(index)}
+          >
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <div className="media-wrapper">
+                  <img src={member.imgUrl} alt={member.name} className="team-image" />
+                </div>
+                <h5>{member.name}</h5>
               </div>
-              <CardContent>
-                <Typography variant="h5" component="div">
-                  {member.name}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {member.bio}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
+              <div className="flip-card-back">
+                <p>{member.bio}</p>
+              </div>
+            </div>
+          </div>
         ))}
-      </Grid>
+      </div>
     </div>
   );
 }

@@ -24,7 +24,12 @@ const Sidebar = () => {
         <CDBSidebarContent className="sidebar-color">
           <CDBSidebarMenu>
             <CDBSidebarMenuItem icon="th-large">Home</CDBSidebarMenuItem>
-            <CDBSidebarMenuItem icon="sticky-note">Content</CDBSidebarMenuItem>
+            
+            <CDBSidebarMenuItem icon="sticky-note">
+            <Link to="/Content">Content</Link>
+            </CDBSidebarMenuItem>
+
+            
             <CDBSidebarMenuItem icon="sitemap" iconType="solid">
             <Link to="/Taxonomy">Taxonomy</Link>
             </CDBSidebarMenuItem>
