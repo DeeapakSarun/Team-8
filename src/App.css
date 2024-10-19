@@ -1,4 +1,3 @@
-/* src/App.css */
 html, body {
   height: 100%;
   margin: 0;
@@ -6,57 +5,58 @@ html, body {
 }
 
 .App {
+  text-align: left;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
 }
 
-.whole-body{
+.whole-body {
   display: flex;
+  min-height: 100vh;
 }
 
-.App-header,
-.App-footer {
-  background-color: #282c34;
-  color: white;
-}
-
-.App-header {
+.right-body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  padding: 10px;
-  
+  flex-grow: 1;
 }
-
-.App-header h1{
-  font-size: 24px;
-  display: block;
-  width: 100vw;
-}
-
-
-.App-footer {
-  padding: 10px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  position: absolute;
-}
-
 
 .App-body {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: max-content;
-  min-height: 40vh;
+  flex-grow: 1;
+  flex-direction: column;
   padding: 20px;
 }
 
-.App-main {
+.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.App-header h1 {
+  font-size: 24px;
+  width: 100%;
+}
+
+.App-footer {
+  background-color: #282c34;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.App-content {
   flex-grow: 1;
   padding: 20px;
 }
@@ -65,6 +65,10 @@ html, body {
   width: 200px;
   padding: 20px;
   background-color: #f0f0f0;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .App-sidebar ul {
@@ -95,18 +99,8 @@ footer {
   left: 0;
 }
 
-footer p {
-  margin: 0;
-}
-.App-footer {
-  background-color: #282c34;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  position: relative;
-  width: 100%;
-  clear: both;
-  margin-top: auto;
-  bottom: 0;
-  left: 0;
+
+.App-main {
+  padding: 20px;
+  flex-grow: 1;
 }

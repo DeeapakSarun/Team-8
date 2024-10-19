@@ -1,3 +1,4 @@
+
 import React from 'react';
 import './App.css';
 import Header from './Header';
@@ -9,6 +10,7 @@ import Team from './Team';
 import Content from './Content';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+
 function App() {
   return (
     <Router>
@@ -19,7 +21,6 @@ function App() {
             <Header />
             <div className="App-body">
               <div className="App-content">
-                {/* Setup Routes */}
                 <Routes>
                   <Route path="/" element={<Main />} />
                   <Route path="/Taxonomy" element={<Taxonomy />} />
