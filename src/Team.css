@@ -3,14 +3,14 @@
   text-align: center;
   padding: 40px 20px;
   background: linear-gradient(135deg, #f3f4f7 25%, #f1f1f3 75%);
-  width: 100%; 
+  width: 100%;
 }
 
 /* Grid layout for team members */
 .team-members {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px; 
+  gap: 30px;
   justify-items: center;
   margin-top: 30px;
   max-width: 1200px; /* Limit max width */
@@ -99,5 +99,12 @@
 @media (max-width: 600px) {
   .team-members {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .team-members {
+    display: flex;
+    flex-direction: column;
   }
 }
