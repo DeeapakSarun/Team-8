@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   CDBSidebar,
   CDBSidebarContent,
@@ -8,39 +8,48 @@ import {
   CDBSidebarFooter,
 } from "cdbreact";
 import "./Sidebar.css";
-
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
+  const [collapsed, setCollapsed] = useState(false);
+
+  const toggleSidebar = () => {
+    setCollapsed(!collapsed);
+  };
+
   return (
-    <div className="sidebar-main">
-      <CDBSidebar className="sidebar-color">
+    <div
+      className={`sidebar-main ${collapsed ? "collapsed" : ""}`}
+      style={{ width: collapsed ? "80px" : "240px" }}
+    >
+      <CDBSidebar className="sidebar-color fixed-sidebar">
         <CDBSidebarHeader
           className="sidebar-color"
-          prefix={<i className="fa fa-bars" />}
+          prefix={
+            <i
+              className="fa fa-bars"
+              onClick={toggleSidebar}
+              style={{ cursor: "pointer" }}
+            />
+          }
         >
-          Contents
+          {!collapsed && <span>Contents</span>}
         </CDBSidebarHeader>
+
         <CDBSidebarContent className="sidebar-color">
           <CDBSidebarMenu>
-
-            {/* <CDBSidebarMenuItem icon="fas fa-home">Home</CDBSidebarMenuItem> */}
-            <CDBSidebarMenuItem icon="fas fa-home">
-              <Link to = "/">Home</Link>
-            </CDBSidebarMenuItem>
-      
-            <CDBSidebarMenuItem icon="sticky-note">
-              <Link to="/Content">Content</Link>
-            </CDBSidebarMenuItem>
-
-            <CDBSidebarMenuItem icon="sitemap" iconType="solid">
-              <Link to="/Taxonomy">Taxonomy</Link>
-            </CDBSidebarMenuItem>
-
-            <CDBSidebarMenuItem icon="users" iconType="users">
-              <Link to="/Team">Contributions</Link>
-            </CDBSidebarMenuItem>
-
+            <Link to="/">
+              <CDBSidebarMenuItem icon="fas fa-home">Home</CDBSidebarMenuItem>
+            </Link>
+            <Link to="/Content">
+              <CDBSidebarMenuItem icon="sticky-note">Content</CDBSidebarMenuItem>
+            </Link>
+            <Link to="/Taxonomy">
+              <CDBSidebarMenuItem icon="sitemap">Taxonomy</CDBSidebarMenuItem>
+            </Link>
+            <Link to="/Team">
+              <CDBSidebarMenuItem icon="users">Contributions</CDBSidebarMenuItem>
+            </Link>
           </CDBSidebarMenu>
         </CDBSidebarContent>
 
