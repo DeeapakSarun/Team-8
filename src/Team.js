@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Team.css";
-import { Margin } from "@mui/icons-material";
 
 const teamMembers = [
   {
