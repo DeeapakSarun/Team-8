@@ -1,11 +1,9 @@
-/* Main layout for content page */
 .content-page {
   display: flex;
   flex-direction: column;
   align-items: left;
   padding: 20px;
 }
-
 
 .content-navigation {
   display: flex;
@@ -31,7 +29,6 @@
 .content-tab:hover {
   background-color: #ddd;
 }
-
 
 .content-display {
   width: 100%;
