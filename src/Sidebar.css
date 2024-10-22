@@ -23,7 +23,7 @@ body {
 
 .collapsed .CDBSidebarHeader span,
 .collapsed .CDBSidebarFooter div {
-    display: none;
+    display: block;
 }
 
 .sidebar-main.collapsed {
@@ -84,22 +84,6 @@ body {
     opacity: 1;
 }
 
-.mobile-toggle-btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: #282c34;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 50;
-}
-
-.mobile-toggle-btn i {
-    font-size: 18px;
-}
 
 @media (max-width: 768px) {
     .mobile-toggle-btn {

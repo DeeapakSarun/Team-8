@@ -79,6 +79,21 @@
 }
 
 /* Responsive Styles */
+@media (max-width: 1020px) {
+  .taxonomy-table h2 {
+    font-size: 1rem;
+    /* Smaller header size */
+  }
+
+  .taxonomy-table th,
+  .taxonomy-table td {
+    padding: 10px 5px;
+    /* Reduced padding */
+    font-size: 0.9rem;
+    /* Smaller font size */
+  }
+}
+
 @media (max-width: 768px) {
   .taxonomy-table h2 {
     font-size: 1rem;

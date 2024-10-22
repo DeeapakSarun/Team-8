@@ -20,7 +20,7 @@ const Sidebar = () => {
   return (
     <div
       className={`sidebar-main ${collapsed ? "collapsed" : ""}`}
-      style={{ width: collapsed ? "80px" : "240px" }}
+      style={{ width: collapsed ? "80px" : "120px" }}
     >
       <CDBSidebar className="sidebar-color fixed-sidebar">
         <CDBSidebarHeader
@@ -57,7 +57,7 @@ const Sidebar = () => {
           className="sidebar-color"
           style={{ textAlign: "center" }}
         >
-          <div className="sidebar-btn-wrapper" style={{ padding: "20px 5px" }}>
+          <div className="sidebar-btn-wrapper" style={{ padding: "10px 5px" }}>
             Team 8
           </div>
         </CDBSidebarFooter>
