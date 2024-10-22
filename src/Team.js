@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import './Team.css';
+import React, { useState } from "react";
+import "./Team.css";
+import { Margin } from "@mui/icons-material";
 
 const teamMembers = [
   {
@@ -50,15 +51,19 @@ function Team() {
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className={`flip-card ${flipped[index] ? 'flipped' : ''}`}
+            className={`flip-card ${flipped[index] ? "flipped" : ""}`}
             onClick={() => handleFlip(index)}
           >
-            <div className="flip-card-inner" title='Click to flip the card'>
+            <div className="flip-card-inner" title="Click to flip the card">
               <div className="flip-card-front">
                 <div className="media-wrapper">
-                  <img src={member.imgUrl} alt={member.name} className="team-image" />
+                  <img
+                    src={member.imgUrl}
+                    alt={member.name}
+                    className="team-image"
+                  />
                 </div>
-                <h5>{member.name}</h5>
+                <h5 style={{ marginTop: "30px" }}>{member.name}</h5>
               </div>
               <div className="flip-card-back">
                 <p>{member.bio}</p>
