@@ -153,7 +153,8 @@ footer {
 
 @media (max-width: 480px) {
   .App-header h1 {
-    font-size: 18px;
+    font-size: 15px;
+    max-width: 300px;
     /* Further reduce header font size */
   }
 

@@ -11,16 +11,16 @@ import "./Sidebar.css";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(false); // Set default to true
 
   const toggleSidebar = () => {
-    setCollapsed(!collapsed);
+    setCollapsed(!collapsed); // Corrected toggle function
   };
 
   return (
     <div
       className={`sidebar-main ${collapsed ? "collapsed" : ""}`}
-      style={{ width: collapsed ? "80px" : "120px" }}
+      style={{ width: collapsed ? "100px" : "50px" }}
     >
       <CDBSidebar className="sidebar-color fixed-sidebar">
         <CDBSidebarHeader
