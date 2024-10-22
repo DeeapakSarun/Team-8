@@ -3,7 +3,6 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 .sidebar-main {
@@ -37,7 +36,7 @@ body {
 }
 
 .collapsed+.right-body {
-    margin-left: 80px;
+    margin-left: 70px;
     /* When sidebar is collapsed */
 }
 
@@ -75,18 +74,10 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 50;
-    display: none;
     transition: opacity 0.3s;
 }
 
 .overlay.active {
     display: block;
     opacity: 1;
-}
-
-
-@media (max-width: 768px) {
-    .mobile-toggle-btn {
-        display: block;
-    }
 }
