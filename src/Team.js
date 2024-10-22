@@ -4,32 +4,32 @@ import './Team.css';
 const teamMembers = [
   {
     name: "Ravali Gangineni",
-    bio: "Bio for Ravali...",
-    imgUrl: "https://via.placeholder.com/150",
+    bio: "As the reporting and delivery head making sure to submit the work on time.Worked on creating the content page and contributions page. Worked on respective Papers",
+    imgUrl: "/images/Ravali.jpeg",
   },
   {
     name: "Deepak Sarun Yuvachandran",
-    bio: "Bio for Deepak...",
-    imgUrl: "https://via.placeholder.com/150",
+    bio: "Deepak Sarun mainly focused on web Development,Did the website to be responsive.Worked on the survey papers ",
+    imgUrl: "/images/Deepak.png",
   },
   {
     name: "Sai Sandeep Reddy Gandluri",
-    bio: "Bio for Sai Sandeep...",
-    imgUrl: "https://via.placeholder.com/150",
+    bio: "Created a Draft of Taxonomy page and worked on the survey paper using the overleaf template provided.",
+    imgUrl: "/images/Sandeep.png",
   },
   {
     name: "Vyshnavi Gavara",
-    bio: "Bio for Vyshnavi...",
-    imgUrl: "https://via.placeholder.com/150",
+    bio: "Populated the content in the taxonomy page and worked her respective papers",
+    imgUrl: " /images/Vyshnavi.png",
   },
   {
     name: "Mouli Naidu Lukalapu",
-    bio: "Bio for Mouli...",
-    imgUrl: "https://via.placeholder.com/150",
+    bio: "Created the sidebar, did some styling added the content in the home page",
+    imgUrl: "/images/MouliNaidu.png",
   },
   {
     name: "Navreet Kaur",
-    bio: "Bio for Navreet...",
+    bio: "summarized the survey paper findings into a table and worked on development too",
     imgUrl: "/images/Navreet.png",
   },
 ];
