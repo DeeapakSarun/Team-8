@@ -5,6 +5,7 @@ function Main() {
   const [isIntroductionOpen, setIsIntroductionOpen] = useState(true);
   const [isChallengesOpen, setIsChallengesOpen] = useState(false);
   const [isTrendsOpen, setIsTrendsOpen] = useState(false);
+  const [isFutureOpen, setIsFutureOpen] = useState(false);
 
   return (
     <main className="App-main">
@@ -111,6 +112,34 @@ function Main() {
           Trends
         </h2>
         {isTrendsOpen && (
+          <div className="section-content">
+            <p> Lorem ipsum odor amet, consectetuer adipiscing elit. Non quam
+              dolor mus eleifend adipiscing imperdiet luctus. Molestie lacus
+              nisl libero sagittis lacus. Fusce neque etiam lacinia turpis
+              iaculis et tellus bibendum. Pretium venenatis fusce pellentesque
+              est hendrerit pharetra. Egestas orci mollis risus finibus; non
+              accumsan inceptos. Dignissim enim blandit congue venenatis mattis
+              iaculis cubilia nostra. Curabitur fusce fusce tristique hac morbi
+              platea. Sed ad sagittis mattis aenean justo sollicitudin montes
+              inceptos.</p>
+          </div>
+        )}
+      </section>
+
+      <hr />
+      <section>
+        <h2
+          className="section-title"
+          onClick={() => setIsFutureOpen(!isFutureOpen)}
+        >
+          <i
+            className={`fas ${
+              isFutureOpen ? "fa-chevron-up" : "fa-chevron-down"
+            }`}
+          />{" "}
+          Future Research Direcrtions
+        </h2>
+        {isFutureOpen && (
           <div className="section-content">
             <p> Lorem ipsum odor amet, consectetuer adipiscing elit. Non quam
               dolor mus eleifend adipiscing imperdiet luctus. Molestie lacus
