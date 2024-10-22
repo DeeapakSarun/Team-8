@@ -1,4 +1,3 @@
-/* Base styles */
 html,
 body {
   height: 100%;
@@ -115,19 +114,19 @@ footer {
   flex-grow: 1;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
   .App-sidebar {
     width: 100%;
     position: relative;
-    /* Allow sidebar to flow with content */
+
     min-height: auto;
-    /* Remove the fixed height */
+
   }
 
   .App {
     flex-direction: column;
-    /* Stack elements vertically */
+
   }
 
   .App-header,
@@ -137,7 +136,7 @@ footer {
 
   .App-header h1 {
     font-size: 20px;
-    /* Reduce header font size */
+
   }
 
   .App-content,
@@ -147,7 +146,7 @@ footer {
 
   .App-sidebar ul li {
     margin: 5px 0;
-    /* Reduce spacing in sidebar */
+
   }
 }
 
@@ -155,11 +154,11 @@ footer {
   .App-header h1 {
     font-size: 15px;
     max-width: 300px;
-    /* Further reduce header font size */
+
   }
 
   .App-footer {
     padding: 10px;
-    /* Adjust footer padding */
+
   }
 }

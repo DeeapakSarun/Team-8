@@ -32,14 +32,13 @@ body {
 
 .right-body {
     margin-left: 240px;
-    /* Adjust margin according to sidebar */
     transition: margin-left 0.3s ease;
 }
 
 .collapsed+.right-body {
     margin-left: 80px;
-    /* When sidebar is collapsed */
 }
+
 
 @media (max-width: 768px) {
     .sidebar-main {
@@ -52,11 +51,11 @@ body {
 
     .right-body {
         margin-left: 70px;
-        /* Ensure the content takes full width on mobile */
+
     }
 }
 
-/* Overlay for mobile view */
+
 .overlay {
     position: fixed;
     top: 0;
