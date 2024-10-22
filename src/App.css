@@ -1,4 +1,6 @@
-html, body {
+/* Base styles */
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -9,7 +11,6 @@ html, body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-
 }
 
 .whole-body {
@@ -21,6 +22,13 @@ html, body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.App-main {
+  font-size: 1.5rem;
+
+  text-align: justify;
+  max-width: 75%;
 }
 
 .App-body {
@@ -37,7 +45,7 @@ html, body {
   text-align: center;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 2;
 }
 
 .App-header h1 {
@@ -57,8 +65,10 @@ html, body {
 }
 
 .App-content {
+  display: flex;
+  justify-content: center;
   flex-grow: 1;
-  padding: 20px;
+  padding: 0;
 }
 
 .App-sidebar {
@@ -88,19 +98,67 @@ html, body {
 .App-sidebar ul li a:hover {
   text-decoration: underline;
 }
+
 footer {
   background-color: #343a40;
   color: #fff;
   padding: 15px 0;
   text-align: center;
   width: 100%;
-  position: relative; /* Keep it at the bottom of the content */
+  position: relative;
   bottom: 0;
   left: 0;
 }
 
-
 .App-main {
   padding: 20px;
   flex-grow: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .App-sidebar {
+    width: 100%;
+    position: relative;
+    /* Allow sidebar to flow with content */
+    min-height: auto;
+    /* Remove the fixed height */
+  }
+
+  .App {
+    flex-direction: column;
+    /* Stack elements vertically */
+  }
+
+  .App-header,
+  .App-footer {
+    padding: 15px;
+  }
+
+  .App-header h1 {
+    font-size: 20px;
+    /* Reduce header font size */
+  }
+
+  .App-content,
+  .App-main {
+    padding: 10px;
+  }
+
+  .App-sidebar ul li {
+    margin: 5px 0;
+    /* Reduce spacing in sidebar */
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header h1 {
+    font-size: 18px;
+    /* Further reduce header font size */
+  }
+
+  .App-footer {
+    padding: 10px;
+    /* Adjust footer padding */
+  }
 }

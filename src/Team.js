@@ -9,7 +9,7 @@ const teamMembers = [
   },
   {
     name: "Deepak Sarun Yuvachandran",
-    bio: "Deepak Sarun mainly focused on web Development,Did the website to be responsive.Worked on the survey papers ",
+    bio: "Developed website structure and ensured responsiveness. Implemented CI/CD pipelines and collaborated on the home page design, improving functionality and user experience with survey papers.",
     imgUrl: "/images/Deepak.png",
   },
   {
@@ -53,7 +53,7 @@ function Team() {
             className={`flip-card ${flipped[index] ? 'flipped' : ''}`}
             onClick={() => handleFlip(index)}
           >
-            <div className="flip-card-inner">
+            <div className="flip-card-inner" title='Click to flip the card'>
               <div className="flip-card-front">
                 <div className="media-wrapper">
                   <img src={member.imgUrl} alt={member.name} className="team-image" />

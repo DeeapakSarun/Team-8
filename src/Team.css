@@ -6,26 +6,36 @@
   width: 100%;
 }
 
-/* Grid layout for team members */
+/* Flex container for team members */
 .team-members {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  /* Allow items to wrap onto multiple lines */
+  justify-content: center;
+  /* Center items horizontally */
   gap: 30px;
-  justify-items: center;
+  /* Gap between items */
   margin-top: 30px;
-  max-width: 1200px; /* Limit max width */
-  margin-left: 0;
-  margin-right: 0;
+  max-width: 1200px;
+  /* Limit max width */
+  margin-left: auto;
+  /* Centering */
+  margin-right: auto;
+  /* Centering */
   width: 100%;
 }
 
 /* Flip card container */
 .flip-card {
-  width: 100%;
-  max-width: 250px; /* Ensure cards don't exceed a certain size */
+  flex: 1 1 250px;
+  /* Allow flexibility with a base size */
+  max-width: 250px;
+  /* Ensure cards don't exceed a certain size */
   height: 350px;
   perspective: 1000px;
   cursor: pointer;
+  margin: 0 auto;
+  /* Center card */
 }
 
 .flip-card-inner {
@@ -96,15 +106,39 @@
 }
 
 /* Responsive design for mobile devices */
-@media (max-width: 600px) {
-  .team-members {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+@media (max-width: 1024px) {
+  .flip-card {
+    max-width: 220px;
+    /* Adjust max width for smaller screens */
+    height: 300px;
+    /* Adjust height for smaller screens */
   }
 }
 
 @media (max-width: 768px) {
-  .team-members {
-    display: flex;
-    flex-direction: column;
+  .flip-card {
+    max-width: 200px;
+    /* Further adjust max width for smaller screens */
+    height: 280px;
+    /* Further adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .team-card h5 {
+    font-size: 1.1em;
+    /* Smaller text for mobile */
+  }
+
+  .team-card p {
+    font-size: 0.8em;
+    /* Smaller text for mobile */
+  }
+
+  .flip-card {
+    max-width: 180px;
+    /* Further adjust max width for mobile */
+    height: 250px;
+    /* Further adjust height for mobile */
   }
 }

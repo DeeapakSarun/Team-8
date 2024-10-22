@@ -1,11 +1,12 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-  }
-  
-  .sidebar-main {
+}
+
+.sidebar-main {
     height: 100vh;
     display: flex;
     position: fixed;
@@ -13,72 +14,77 @@ html, body {
     left: 0;
     z-index: 1000;
     transition: width 0.3s, left 0.3s;
-  }
-  
-  .sidebar-color {
+}
+
+.sidebar-color {
     background-color: #282c34;
     color: white;
-  }
-  
-  .collapsed .CDBSidebarHeader span,
-  .collapsed .CDBSidebarFooter div {
+}
+
+.collapsed .CDBSidebarHeader span,
+.collapsed .CDBSidebarFooter div {
     display: none;
-  }
-  
-  .sidebar-main.collapsed {
+}
+
+.sidebar-main.collapsed {
     width: 80px;
-  }
-  
-  .right-body {
-    margin-left: 240px; /* Adjust margin according to sidebar */
+}
+
+.right-body {
+    margin-left: 240px;
+    /* Adjust margin according to sidebar */
     transition: margin-left 0.3s;
-  }
-  
-  .collapsed + .right-body {
-    margin-left: 80px; /* When sidebar is collapsed */
-  }
-  
-  .hide {
-    left: -240px; /* Hide sidebar in mobile */
-  }
-  
-  .show {
-    left: 0; /* Show sidebar in mobile */
-  }
-  
-  @media (max-width: 768px) {
+}
+
+.collapsed+.right-body {
+    margin-left: 80px;
+    /* When sidebar is collapsed */
+}
+
+.hide {
+    left: -240px;
+    /* Hide sidebar in mobile */
+}
+
+.show {
+    left: 0;
+    /* Show sidebar in mobile */
+}
+
+@media (max-width: 768px) {
     .sidebar-main {
-      width: 240px;
-      left: -240px;
+        width: 240px;
+
     }
-  
+
     .sidebar-main.collapsed {
-      width: 80px;
+        width: 80px;
     }
-  
+
     .right-body {
-      margin-left: 0; /* Ensure the content takes full width on mobile */
+        margin-left: 0;
+        /* Ensure the content takes full width on mobile */
     }
-  }
-  
-  .overlay {
-    position: fixed;
+}
+
+.overlay {
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    z-index: 50;
     display: none;
     transition: opacity 0.3s;
-  }
-  
-  .overlay.active {
+}
+
+.overlay.active {
     display: block;
     opacity: 1;
-  }
-  
-  .mobile-toggle-btn {
+}
+
+.mobile-toggle-btn {
     position: fixed;
     top: 20px;
     left: 20px;
@@ -88,16 +94,15 @@ html, body {
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 1001;
-  }
-  
-  .mobile-toggle-btn i {
+    z-index: 50;
+}
+
+.mobile-toggle-btn i {
     font-size: 18px;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .mobile-toggle-btn {
-      display: block;
+        display: block;
     }
-  }
-  
+}
