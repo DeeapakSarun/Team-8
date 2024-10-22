@@ -24,7 +24,7 @@ const teamMembers = [
   },
   {
     name: "Mouli Naidu Lukalapu",
-    bio: "Created the sidebar, did some styling added the content in the home page",
+    bio: "Created the sidebar, worked on styling some pages summarized and added the content in the home page",
     imgUrl: "/images/MouliNaidu.png",
   },
   {
