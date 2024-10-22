@@ -1,11 +1,6 @@
-import React, { useState } from "react";
 import "./App.css";
 
 function Main() {
-  const [isIntroductionOpen, setIsIntroductionOpen] = useState(true);
-  const [isChallengesOpen, setIsChallengesOpen] = useState(false);
-  const [isTrendsOpen, setIsTrendsOpen] = useState(false);
-  const [isFutureOpen, setIsFutureOpen] = useState(false);
 
   return (
     <main className="App-main">
