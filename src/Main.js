@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./homepage.css";
 
 function Main() {
   const [isIntroductionOpen, setIsIntroductionOpen] = useState(true);
